@@ -1,0 +1,44 @@
+/* src/app/pages/repos-detail-page/repos-detail-page.component.scss */
+
+/* Styles for the repositories container */
+.repositories-container {
+    @apply flex flex-wrap justify-center items-center mt-20;
+  }
+  
+  /* Styles for the repository card */
+  .repo-card {
+    @apply w-96 h-48 m-10 shadow-md border border-solid border-gray-300 rounded overflow-hidden flex flex-col border-black;
+  }
+  
+  
+  /* Use Tailwind CSS color classes for text color */
+  h2 {
+    @apply text-blue-700 text-lg font-bold text-3xl; /* Adjust the color class based on your preference */
+  }
+  
+  .pagination-container {
+    @apply flex justify-center items-center mt-20;
+  }
+  
+  /* Styles for the repository card body */
+  .repo-card-body {
+    @apply p-4 text-center;
+  }
+  
+  /* Styles for the repository card title (name) */
+  .repo-card-title {
+    @apply text-lg font-bold mb-2 text-black; /* Adjust the color class based on your preference */
+  }
+  
+  /* Styles for the repository card text (description) */
+  .repo-card-description {
+    @apply text-sm mb-2 text-black;
+  }
+  
+  /* Styles for the repository card language */
+  .repo-card-language {
+    
+      @apply inline-block px-4 py-2 bg-blue-500 text-white rounded-md transition duration-300 ease-in-out;
+    
+  }
+  

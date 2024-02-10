@@ -1,0 +1,13 @@
+<!-- src/app/components/pagination/pagination.component.html -->
+<div>
+  <ul class="pagination">
+    <li class="page-item" (click)="onPrevious()">Previous</li>
+    <ng-container *ngFor="let page of getPageArray()">
+      <li class="page-item" [class.active]="currentPage === page">
+        <a class="page-link" (click)="onPageChange(page)">{{ page }}</a>
+      </li>
+    </ng-container>
+    <li class="page-item" (click)="onNext()">Next</li>
+  </ul>
+</div>
+

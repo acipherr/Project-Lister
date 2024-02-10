@@ -1,0 +1,27 @@
+/* src/app/components/pagination/pagination.component.scss */
+
+.pagination {
+    @apply list-none flex justify-center items-center p-0;
+  }
+  
+  .page-item {
+    @apply cursor-pointer px-2 py-1 mx-1 border border-solid border-gray-300 rounded;
+  }
+  
+  .page-item.active {
+    @apply bg-blue-700 text-white;
+  }
+  
+  .items-per-page {
+    @apply ml-4;
+  }
+  
+  /* Style the dropdown */
+  .items-per-page label {
+    @apply mr-2;
+  }
+  
+  .items-per-page select {
+    @apply px-2 py-1 border border-solid border-gray-300 rounded;
+  }
+  

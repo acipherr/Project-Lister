@@ -1,0 +1,47 @@
+/* Navbar styling */
+.navbar {
+    @apply bg-blue-700 w-full mx-auto rounded-lg pt-10 pb-10;
+  }
+  
+  .navbar-brand {
+    @apply flex items-center;
+  }
+  
+  .brand-text {
+    @apply text-white text-base no-underline;
+  }
+  .navbar-logo {
+    @apply w-16 h-16 mr-3 ; // Add a temporary border for visibility
+  }
+  
+  
+  .navbar-toggler {
+    @apply border-solid border-white;
+  }
+  
+  .navbar-toggler-icon {
+    @apply bg-white;
+  }
+  
+  .navbar-nav {
+    @apply flex items-center justify-start list-none p-0;
+  }
+  
+  .nav-item {
+    @apply mr-6 text-2xl font-bold justify-center items-center; // Adjust the spacing value as needed
+  }
+  .nav-item1 {
+    @apply mr-6 text-2xl font-bold justify-center items-center; // Adjust the spacing value as needed
+  }
+  
+  .nav-link{
+    @apply text-white font-bold no-underline ml-12;
+  }
+  .nav-link1{
+    @apply text-white font-bold no-underline ml-12;
+  }
+  
+  .nav-link:hover, .nav-link1:hover {
+    @apply text-yellow-400;
+  }
+  

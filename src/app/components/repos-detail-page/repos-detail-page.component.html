@@ -1,0 +1,26 @@
+<div *ngIf="repos.length > 0">
+  <h2>Repositories:</h2>
+  <div class="repositories-container">
+    <div *ngFor="let repo of pagedRepos" class="repo-card">
+      <div class="repo-card-body">
+        <h3 class="repo-card-title">{{ repo.name }}</h3>
+        <p class="repo-card-description">{{ repo.description }}</p>
+        <p class="repo-card-language">{{ repo.language }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="repos.length === 0">
+  <p>No repositories found for the user.</p>
+</div>
+
+<div class="pagination-container">
+  <app-pagination
+    [itemsPerPage]="itemsPerPage"
+    [currentPage]="currentPage"
+    [totalPages]="totalPages"
+    (itemsPerPageChange)="onItemsPerPageChange($event)"
+    (pageChange)="onPageChange($event)"
+  ></app-pagination>
+</div>

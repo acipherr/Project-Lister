@@ -1,0 +1,20 @@
+
+<div class="card" >
+    <img src={{imgurl}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">name : {{name}}</h5>
+      <p class="card-text"> bio : {{bio}}</p>
+      <p class="card-text1">
+        GitHub:
+        <a href="{{html_url}}" target="_blank" class="text-blue-500 hover:underline">{{html_url}}</a>
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+
+      <li class="list-group-item">location : {{location}}</li>
+      <li class="list-group-item1">followers : {{followers}}</li>
+    </ul>
+    <a [routerLink]="['/repos', username]" class="card-link btn">View Repositories</a>
+
+    
+  </div>

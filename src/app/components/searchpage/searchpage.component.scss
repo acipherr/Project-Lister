@@ -1,0 +1,44 @@
+// Styles for the container
+.container {
+  @apply flex justify-center items-center h-screen;
+}
+
+// Styles for the form
+form {
+  @apply flex flex-col p-20 border border-solid border-gray-300 rounded shadow-md border-blue-500;
+  width: 400px; // Adjust the width as needed
+  height: auto;
+
+  // Additional styles for form-specific elements
+  label {
+    @apply mb-10 text-black justify-center items-start text-lg font-bold;
+    
+  }
+
+  input {
+    @apply p-10;
+    margin-bottom: 15px; // Use the direct value instead of mb-15
+    @apply border border-solid border-gray-300 rounded outline-none;
+  }
+
+  button {
+    @apply p-10 bg-blue-500 text-white border-none rounded cursor-pointer transition duration-300 ease-in-out;
+
+    &:disabled {
+      @apply bg-gray-300 cursor-not-allowed; // Change bg-ccc to bg-gray-300 or any other valid color class
+    }
+
+    &:hover {
+      @apply bg-blue-700;
+    }
+  }
+  .btn-btn-primary {
+    @apply justify-center items-center;
+  }
+
+  // Centering the button within the form
+  button {
+    @apply self-center ;
+    
+  }
+}
